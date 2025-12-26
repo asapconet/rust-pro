@@ -7,25 +7,25 @@ struct User {
     id: u32,
     name: String,
     age: u8,
-}
+} // defining the user object type to use
 
 #[derive(Parser)]
 #[command(name = "user-management", about = "a simple user management with cli")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,
-}
+} // defining the cli struct to use [its a custom type], and it is the main of the command
 
 #[derive(Subcommand)]
 enum Commands {
     Add { name: String, age: u8 },
     List,
     Delete { id: u32, name: String },
-}
+} // these are the commands that the user can use to perform the operations in the cli
 
 fn main() {
     let cli = Cli::parse();
-    let db_path = "users.json";
+    let db_path = "users.json"; // defining the path to the database file
 
     // Load existing users or start with empty Vec
     let mut users: Vec<User> = fs::read_to_string(db_path)
