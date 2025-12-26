@@ -1,0 +1,1 @@
+/home/lordsarcastic/Documents/GitHub/rust-pro/axum/target/debug/hell_o: /home/lordsarcastic/Documents/GitHub/rust-pro/axum/src/bin/hell_o.rs /home/lordsarcastic/Documents/GitHub/rust-pro/axum/src/hell_o.rs /home/lordsarcastic/Documents/GitHub/rust-pro/axum/src/lib.rs
