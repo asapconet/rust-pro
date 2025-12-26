@@ -47,7 +47,7 @@ fn main() {
                 println!("No users found")
             } else {
                 for user in &users {
-                    println!("[{}] {} {}", user.id, user.name, user.age)
+                    println!("[{}] {} {}yrs old", user.id, user.name, user.age)
                 }
             }
         }
