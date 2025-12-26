@@ -1,1 +1,0 @@
-/home/lordsarcastic/Documents/GitHub/rust-pro/user_cli/target/debug/user_management: /home/lordsarcastic/Documents/GitHub/rust-pro/user_cli/src/bin/user_management.rs /home/lordsarcastic/Documents/GitHub/rust-pro/user_cli/src/lib.rs /home/lordsarcastic/Documents/GitHub/rust-pro/user_cli/src/user_management.rs

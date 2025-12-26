@@ -1,1 +1,37 @@
+# ==== Rust / Cargo ==== #
+
+# Ignore build output directories
+/target/
+**/target/
+
+# Ignore generated Cargo.lock in workspace members if you prefer (optional)
+# Cargo.lock is usually committed for applications, not libraries
+# Uncomment if you want to ignore it everywhere
+# **/Cargo.lock
+
+# Ignore cargo temporary files
+**/*.rs.bk
+**/*.rs~
+
+# Ignore Rustup override files
+rust-toolchain
+rust-toolchain.toml
+
+# Ignore IDE/editor specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+
+# Ignore logs
+*.log
+
+# Ignore coverage / profiling
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+
+# Ignore target artifacts in all workspace members
 **/target/
