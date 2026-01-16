@@ -3,6 +3,11 @@ name = "hell-o"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "health_check"
+path = "src/health_check.rs"
+
 [dependencies]
-axum = "0.8.8"
+axum = {version = "0.8.8", features = ["json"]}
 tokio = { version = "1.48.0", features = ["full"] }
+serde_json = "1.0.80"
