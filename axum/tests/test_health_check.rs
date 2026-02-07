@@ -1,16 +1,17 @@
 use axum::{
     body::Body,
     http::{Request, StatusCode},
+    response::IntoResponse,
 };
 use http_body_util::BodyExt;
 use serde_json::Value;
 use tower::ServiceExt;
 
-use hell_o::errors::api_error::ApiError;
-use hell_o::lib::create_app;
+use hell_o::create_app;
+use hell_o::errors::ApiError;
 
 #[tokio::test]
-async fn test_health_cheak() {
+async fn test_health_check() {
     let app = create_app();
 
     let request = Request::builder()
